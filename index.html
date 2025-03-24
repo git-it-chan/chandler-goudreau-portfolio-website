@@ -2,83 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Chandler Goudreau</title>
+  <title>About Chandler Goudreau</title>
+  <link rel="stylesheet" href="style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <style>
-
-
-
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
-    }
-
-    /* Navbar Container */
-    .navbar {
-      background-color: #911d6c; /* Burgundy */
-      color: #f7e275;            /* Light Yellow */
+      padding: 0;
+      font-family: 'Noto Serif', Georgia, serif;
+      background-color: #581235;
+      color: #ecdf9c;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      padding: 20px 40px;
-      border-bottom: 3px solid #f7e275;
+      height: 100vh;
+      text-align: center;
     }
 
-    /* Brand Name */
-    .logo {
-      font-size: 24px;
+    .splash-container {
+      width: 80%;
+      max-width: 900px;
+      padding: 30px;
+    }
+
+    .splash-container img {
+      width: 100%;
+      margin-bottom: 10%;
+    }
+
+    .splash-header {
+      font-size: 2rem;
       font-weight: bold;
+      margin-bottom: 20px;
     }
 
-    .logo span {
-      display: block;
-      font-size: 14px;
-      font-weight: normal;
-      color: #ffffff;
-    }
-
-    /* Navigation Links */
-    .nav-links a {
-      color: #f7ebb0;
-      text-decoration: none;
-      
-      margin-left: 30px;
-      font-size: 18px;
-      transition: color 0.3s;
-    }
-
-    .nav-links a:hover {
-      color: #ffffff;
+    .splash-paragraph {
+      font-size: 1.4rem;
+      line-height: 1.6;
     }
 
     @media (max-width: 768px) {
-      .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .nav-links {
-        margin-top: 10px;
+      .splash-container {
+        width: 90%;
+        padding: 20px;
       }
     }
   </style>
 </head>
+
 <body>
-
-  <header class="navbar">
-    <div class="logo">
-      <img src="web-assets/nav-logo.svg">
-      <span>Motion Designasfafasfasfasfafasfafasfasfasfasfafasfasfasfafaer</span>
-    </div>
-    <nav class="nav-links">
-      <a href="#">HOME</a>
-      <a href="#">PORTFOLIO</a>
-      <a href="about.html">ABOUT</a>
-      <a href="#">CONTACT</a>
-      <a href="#">SHOP</a>
-    </nav>
-  </header>
-
+  <div class="splash-container">
+    <img src="web-assets/nav-logo.svg" alt="Chandler Goudreau logo" />
+    <header class="splash-header">CREATING A NARRATIVE—BY DESIGN AND SONG.</header>
+    <p class="splash-paragraph">
+      I believe narratives are of utmost importance when it comes to design.
+      My background in theatre, filmmaking, music production, and game development
+      gives me a unique outlook on how I approach design. A story always needs to be told.
+    </p>
+  </div>
 </body>
 </html>

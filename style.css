@@ -34,6 +34,17 @@
     font-style: normal;
   }
   
+
+  
+  .noto-serif {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+  
+  
   
 
   
@@ -52,10 +63,26 @@ body {
 }
 
 header {
-  padding: 60px 20px;
   text-align: center;
-  background: #000;
 }
+
+.splash-header {
+    margin: 0;
+    font-size: 48px;
+    font-family: "Noto-serif", serif;
+    font-style: bold;
+    color: #cfb789;
+  }
+
+  .splash-paragraph {
+
+    margin: 0;
+    font-size: 32px;
+    font-family: "Solway", sans-serif;
+    font-style: bold;
+    color: #e4d7bd;
+
+  }
 
 header h1 {
   font-size: 3em;
