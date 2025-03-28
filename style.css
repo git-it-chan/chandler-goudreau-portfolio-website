@@ -47,7 +47,14 @@
   
   
 
-  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* ensures it stays above other content */
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+  }
   
 
   .nav-links {
@@ -55,11 +62,56 @@
     font-style: bold;
   }
 
+
+
 body {
+  margin: 0;
   font-family: 'Segoe UI', sans-serif;
+  padding-top: 80px; /* adjust depending on your navbar height */
   background: #111;
   color: #eee;
   line-height: 1.6;
+}
+
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3); /* subtle overlay for readability */
+  text-align: center;
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-overlay p {
+  font-size: 1.25rem;
+  opacity: 0.9;
 }
 
 header {
@@ -122,6 +174,47 @@ header p {
   text-align: center;
 }
 
+.custom-button {
+  background-color: #a01764; /* deep magenta */
+  border: 2px solid #f1d5e4; /* soft border */
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-burgundy {
+
+  background-color: #a01764;
+  border-color: #f7e275;
+
+}
+
+.btn-burgundy:hover {
+  background-color: #8b1457;
+  border-color: white;
+  color: #fcecf5;
+}
+
+.btn-teal {
+  background-color: #17989a;
+  border-color: #f7e275;
+}
+
+.btn-teal:hover {
+  background-color: #137f82;
+  border-color: white;
+  color: #e0ffff;
+}
+
+
+.custom-button:hover {
+  transform: translateY(-2px);
+}
+
 #about {
   padding: 60px 20px;
   background: #1a1a1a;
@@ -138,4 +231,26 @@ footer {
   background: #000;
   color: #777;
   font-size: 0.9em;
+}
+
+.social-link {
+  display: inline-flex;
+  text-align: left;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.social-link:hover {
+  color: #137f82; /* Instagram pinkish tone */
 }
