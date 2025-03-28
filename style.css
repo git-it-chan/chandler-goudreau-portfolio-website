@@ -1,264 +1,303 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.solway-light {
-    font-family: "Solway", serif;
-    font-weight: 300;
-    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
-  .solway-regular {
-    font-family: "Solway", serif;
-    font-weight: 400;
-    font-style: normal;
+  .solway-light {
+      font-family: "Solway", serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+    
+    .solway-regular {
+      font-family: "Solway", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    .solway-medium {
+      font-family: "Solway", serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+    
+    .solway-bold {
+      font-family: "Solway", serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+    
+    .solway-extrabold {
+      font-family: "Solway", serif;
+      font-weight: 800;
+      font-style: normal;
+    }
+    
+  
+    
+    .noto-serif {
+      font-family: "Noto Serif", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
+    
+    
+    
+  
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000; /* ensures it stays above other content */
+      transition: background-color 0.3s ease, opacity 0.3s ease;
+    }
+    
+  
+    .nav-links {
+      font-family: "Solway", serif;
+      font-style: bold;
+    }
+  
+  
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    padding-top: 80px; /* adjust depending on your navbar height */
+    background: #111;
+    color: #eee;
+    line-height: 1.6;
   }
   
-  .solway-medium {
-    font-family: "Solway", serif;
-    font-weight: 500;
-    font-style: normal;
+  
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
   }
   
-  .solway-bold {
-    font-family: "Solway", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .solway-extrabold {
-    font-family: "Solway", serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-
-  
-  .noto-serif {
-    font-family: "Noto Serif", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-  }
-  
-  
-  
-
-  .navbar {
-    position: fixed;
+  .hero-video {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* ensures it stays above other content */
-    transition: background-color 0.3s ease, opacity 0.3s ease;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  
+  
+  .hero-overlay {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3); /* subtle overlay for readability */
+    text-align: center;
   }
   
+  .hero-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-overlay p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  .splash-header {
+      margin: 0;
+      font-size: 48px;
+      font-family: "Noto-serif", serif;
+      font-style: bold;
+      color: #cfb789;
+    }
+  
+    .splash-paragraph {
+  
+      margin: 0;
+      font-size: 32px;
+      font-family: "Solway", sans-serif;
+      font-style: bold;
+      color: #e4d7bd;
+  
+    }
+  
+  header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    color: #ccc;
+  }
+  
+  #portfolio {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  #portfolio h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 30px;
+  }
+  
+  .item iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+  
+  .item h3 {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  button {
+  
+    margin-top: 20px;
+  
+  }
+  
+  .custom-button {
+    background-color: #a01764; /* deep magenta */
+    border: 2px solid #f1d5e4; /* soft border */
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-burgundy {
+  
+    background-color: #a01764;
+    border-color: #f7e275;
+  
+  }
+  
+  .btn-burgundy:hover {
+    background-color: #8b1457;
+    border-color: white;
+    color: #fcecf5;
+  }
+  
+  .btn-teal {
+    background-color: #17989a;
+    border-color: #f7e275;
+    color:#ecdf9c;
+  }
+  
+  .btn-teal:hover {
+    background-color: #137f82;
+    border-color: white;
+    color: #e0ffff;
+  }
+  
+  
+  .custom-button:hover {
+    transform: translateY(-2px);
+  }
+  
+  #about {
+    padding: 60px 20px;
+    background: #1a1a1a;
+    text-align: center;
+  }
+  
+  #about h2 {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #000;
+    color: #777;
+    font-size: 0.9em;
+  }
+  
+  .social-link {
+    display: inline-flex;
+    text-align: left;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    flex-shrink: 0;
+  }
+  
+  .social-link:hover {
+    color: #137f82; /* Instagram pinkish tone */
+  }
 
+ /* Desktop: hide hamburger by default */
+.hamburger-icon {
+    display: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 2000; /* ensures it’s clickable above other elements */
+  }
+
+  
+ /* Show hamburger icon and hide nav links on mobile */
+@media (max-width: 768px) {
+  #hamburger {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+  }
+
+  
   .nav-links {
-    font-family: "Solway", serif;
-    font-style: bold;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px; /* adjust based on navbar height */
+    right: 0;
+    background-color: #581235; /* match your navbar bg */
+    width: 100%;
+    padding: 20px;
   }
 
 
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  padding-top: 80px; /* adjust depending on your navbar height */
-  background: #111;
-  color: #eee;
-  line-height: 1.6;
-}
-
-
-
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.hero-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.hero-overlay {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.3); /* subtle overlay for readability */
-  text-align: center;
-}
-
-.hero-overlay h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero-overlay p {
-  font-size: 1.25rem;
-  opacity: 0.9;
-}
-
-header {
-  text-align: center;
-}
-
-.splash-header {
-    margin: 0;
-    font-size: 48px;
-    font-family: "Noto-serif", serif;
-    font-style: bold;
-    color: #cfb789;
+  .nav-links.active {
+    display: flex;
   }
-
-  .splash-paragraph {
-
-    margin: 0;
-    font-size: 32px;
-    font-family: "Solway", sans-serif;
-    font-style: bold;
-    color: #e4d7bd;
-
-  }
-
-header h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 1.2em;
-  color: #ccc;
-}
-
-#portfolio {
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-#portfolio h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  gap: 30px;
-}
-
-.item iframe {
-  width: 100%;
-  height: 200px;
-  border-radius: 10px;
-}
-
-.item h3 {
-  margin-top: 10px;
-  text-align: center;
-}
-
-button {
-
-  margin-top: 20px;
-
-}
-
-.custom-button {
-  background-color: #a01764; /* deep magenta */
-  border: 2px solid #f1d5e4; /* soft border */
-  color: white;
-  text-decoration: none;
-  padding: 0.75rem 2rem;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-}
-
-.btn-burgundy {
-
-  background-color: #a01764;
-  border-color: #f7e275;
-
-}
-
-.btn-burgundy:hover {
-  background-color: #8b1457;
-  border-color: white;
-  color: #fcecf5;
-}
-
-.btn-teal {
-  background-color: #17989a;
-  border-color: #f7e275;
-  color:#ecdf9c;
-}
-
-.btn-teal:hover {
-  background-color: #137f82;
-  border-color: white;
-  color: #e0ffff;
-}
-
-
-.custom-button:hover {
-  transform: translateY(-2px);
-}
-
-#about {
-  padding: 60px 20px;
-  background: #1a1a1a;
-  text-align: center;
-}
-
-#about h2 {
-  margin-bottom: 20px;
-}
-
-footer {
-  padding: 20px;
-  text-align: center;
-  background: #000;
-  color: #777;
-  font-size: 0.9em;
-}
-
-.social-link {
-  display: inline-flex;
-  text-align: left;
-  align-items: center;
-  gap: 8px;
-  color: white;
-  font-weight: 900;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.social-icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-  flex-shrink: 0;
-}
-
-.social-link:hover {
-  color: #137f82; /* Instagram pinkish tone */
 }
