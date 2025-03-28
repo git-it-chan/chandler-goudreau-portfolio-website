@@ -83,10 +83,8 @@
   
   body {
     margin: 0;
-    
     font-family: 'Segoe UI', sans-serif;
     padding-top: 80px; /* adjust depending on your navbar height */
-    background: #111;
     color: #eee;
     line-height: 1.6;
   }
@@ -126,7 +124,7 @@
   }
 
   .caption-box {
-    background-color: rgb(88, 18, 53, 0.5);
+    background-color: rgba(134, 13, 74, 0.5);
     width: 100%;
     padding: 1%;
     color: #cbda7c;
@@ -332,4 +330,12 @@
       opacity: 1;
       pointer-events: auto;
     }
+  }
+
+  .hero-overlay h1 {
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
+  }
+  
+  .hero-overlay p {
+    font-size: clamp(1rem, 3vw, 1.5rem);
   }
