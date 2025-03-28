@@ -106,6 +106,14 @@
     background: rgba(0, 0, 0, 0.3); /* subtle overlay for readability */
     text-align: center;
   }
+
+  .caption-box {
+    background-color: rgb(88, 18, 53, 0.5);
+    width: 100%;
+    padding: 1%;
+    color: #cbda7c;
+   
+  }
   
   .hero-overlay h1 {
     font-size: 3rem;
