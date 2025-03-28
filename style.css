@@ -3,6 +3,23 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+
+  .outfit-extralight {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  
+.montserrat-bolditalic {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+  }
+
   
   .solway-light {
       font-family: "Solway", serif;
@@ -66,6 +83,7 @@
   
   body {
     margin: 0;
+    
     font-family: 'Segoe UI', sans-serif;
     padding-top: 80px; /* adjust depending on your navbar height */
     background: #111;
@@ -148,7 +166,8 @@
     }
   
   header h1 {
-    font-size: 3em;
+    font-family: "Noto-serif", serif;
+    font-size: 3rem;
     margin-bottom: 10px;
   }
   
