@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Chandler Goudreau | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
+  <script src="main.js"></script>
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: 'Noto Serif', serif;
+      background-color: #581235;
+      color: #ecdf9c;
+    }
+
+    .portfolio-container {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 60px 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .portfolio-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: scale(1.01);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .portfolio-image {
+      width: 100%;
+      display: block;
+      height: auto;
+      transition: filter 0.4s ease;
+    }
+
+    .portfolio-item:hover .portfolio-image {
+      filter: brightness(90%);
+      
+      
+    }
+
+    .portfolio-caption {
+      position: absolute;
+      bottom: 0;
+      padding: 20px;
+      color: #ecdf9c;
+      background: rgba(3, 66, 66, 0.6);
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .portfolio-item:hover .portfolio-caption {
+      opacity: 1;
+    }
+
+
+    .portfolio-caption h3 {
+      margin: 0;
+      font-size: clamp(1rem, 2.5vw, 1.5rem);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .portfolio-caption p {
+      margin: 0.25rem 0 0;
+      font-size: clamp(0.75rem, 2vw, 1rem);
+      font-family: 'Solway', serif;
+      font-style: italic;
+    }
+
+  </style>
+</head>
+<body>
+    <div id="navbar"></div>
+
+  <main class="portfolio-container">
+
+    <div class="portfolio-item">
+      <img src="images/blender.jpg" alt="The Howling Cat" class="portfolio-image">
+      <div class="portfolio-caption">
+        <h3>3D MODELING (BLENDER)</h3>
+        <p>Video Game Concept</p>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="images/001-ls.jpg" alt="The Howling Cat" class="portfolio-image">
+      <div class="portfolio-caption">
+        <h3>LOVE'S SHADOW</h3>
+        <p>Animated Short Film Feature</p>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="images/002-ls.jpg" alt="The Howling Cat" class="portfolio-image">
+      <div class="portfolio-caption">
+        <h3>LOVE'S SHADOW</h3>
+        <p>Animated Short Film Feature</p>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="images/003.png" alt="The Howling Cat" class="portfolio-image">
+      <div class="portfolio-caption">
+        <h3>HOW TO BE LESS AFRAID</h3>
+        <p>Opening Title Sequence</p>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="images/004.png" alt="The Howling Cat" class="portfolio-image">
+      <div class="portfolio-caption">
+        <h3>HOW TO BE LESS AFRAID</h3>
+        <p>Opening Title Sequence</p>
+      </div>
+    </div>
+
+
+    <div class="portfolio-item">
+      <img src="images/001.png" alt="Love's Shadows" class="portfolio-image">
+      <div class="portfolio-caption">
+        <h3>LOVE'S SHADOW</h3>
+        <p>Animated Short Film Feature</p>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="images/002.png" alt="The Howling Cat" class="portfolio-image">
+      <div class="portfolio-caption">
+        <h3>THE HOWLING CAT</h3>
+        <p>Short Film</p>
+      </div>
+    </div>
+
+    
+
+    <!-- Repeat structure for more items -->
+  </main>
+  <div id="footer"></div>
+</body>
+</html>
