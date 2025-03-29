@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Chandler Goudreau | Love's Shadow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
+  <script src="main.js"></script>
+
+  <style>
+
+    body {
+        background-color: black;
+    }
+
+    .scroll-container {
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+      height: 100vh;
+    }
+
+    
+    .portfolio-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-item:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .portfolio-image {
+      width: 100%;
+      display: block;
+      height: auto;
+      transition: filter 0.4s ease;
+    }
+
+    .portfolio-item:hover .portfolio-image {
+      filter: brightness(90%);
+      
+      
+    }
+
+    .portfolio-caption {
+      position: absolute;
+      bottom: 0;
+      padding: 20px;
+      color: #ecdf9c;
+      background: rgba(3, 66, 66, 0.6);
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .portfolio-item:hover .portfolio-caption {
+      opacity: 1;
+    }
+
+    .slide {
+      height: 100vh;
+      width: 100%;
+      scroll-snap-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-size: cover;
+      background-position: center;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    .slide h1, .slide h2, .slide p {
+      color: #ecdf9c;
+      text-align: center;
+      max-width: 800px;
+    }
+
+    .video-wrapper {
+        position: relative;
+        width: 100vw;
+        height: 56.25vw; /* Maintain 16:9 ratio based on viewport width */
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+  <div class="scroll-container">
+
+    <!-- VIDEO SLIDE -->
+    <section class="slide" style="background-color: #000;">
+      <div class="video-wrapper">
+        <iframe 
+          src="https://player.vimeo.com/video/912491767?h=5d05b565df" 
+          frameborder="0" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <!-- TITLE SLIDE -->
+    <section class="slide" style="background-image: url('images/hero.jpg');">
+      <h1>LOVE’S SHADOW</h1>
+      <p>An Animated Short Film Feature</p>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="slide">
+      <h2>Overview</h2>
+      <p>This was a year-long production with over 80 shots animated in After Effects and Blender.</p>
+    </section>
+
+    <!-- IMAGE SLIDE -->
+    <section class="slide">
+    
+        <div class="portfolio-item">
+            <img src="images/ls-case/ls-mood-board-720p.jpg" alt="Mood Board" style="width: 80%; border-radius: 10px;">
+            <div class="portfolio-caption">
+                <h3>Mood Board</h3>
+            </div>
+            </div>
+        <div class="portfolio-item">
+            <img src="images/ls-case/ls-script.jpg" alt="Script" style="width: 80%; border-radius: 10px;">
+            <div class="portfolio-caption">
+                <h3>Script (Final Draft)</h3>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- PROCESS -->
+    <section class="slide">
+      <h2>The Process</h2>
+      <p>Combining 3D modeling with 2D character rigs to create a hybrid animation style.</p>
+    </section>
+
+  </div>
+  <div id="footer"></div>
+</body>
+</html>
