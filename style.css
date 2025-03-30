@@ -136,7 +136,7 @@
   }
 
   .caption-box {
-    background-color: rgba(134, 13, 74, 0.5);
+    
     width: 100%;
     padding: 1%;
     color: #cbda7c;
@@ -233,6 +233,58 @@
     text-align: center;
   }
   
+
+
+
+
+  .button-7 {
+    background-color: #a01764;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    box-shadow: rgba(255, 255, 255, .4) 0 3px 0 0 inset;
+    box-sizing: border-box;
+    color: #eee099;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin: 0;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+  }
+  
+  .button-7:hover,
+  .button-7:focus {
+    background-color: #5c0741;
+    color: #f3efdb;
+    transform: scale(1.10);
+  }
+  
+  .button-7:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+  }
+  
+  .button-7:active {
+    background-color: #0064bd;
+    box-shadow: none;
+  }
+
+
+
+
+
+
   button {
   
     margin-top: 20px;
