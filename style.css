@@ -1,7 +1,12 @@
+
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
 
 
@@ -20,6 +25,13 @@
     font-style: italic;
   }
 
+
+  .fjalla-one-regular {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
   
   .solway-light {
       font-family: "Solway", serif;
@@ -144,6 +156,25 @@
   header {
     text-align: center;
   }
+
+  h1 {
+
+    font-family: "montserrat", 'sans-serif';
+
+  }
+
+  h2 {
+
+    font-family: "outfit", 'sans-serif';
+
+  }
+
+
+  h3 {
+
+    font-family: "Fjalla One", 'sans-serif';
+
+  }
   
   .splash-header {
       margin: 0;
@@ -164,7 +195,6 @@
     }
   
   header h1 {
-    font-family: "Noto-serif", serif;
     font-size: 3rem;
     margin-bottom: 10px;
   }
@@ -173,6 +203,7 @@
     font-size: 1.2em;
     color: #ccc;
   }
+
   
   #portfolio {
     padding: 40px 20px;
