@@ -19,6 +19,35 @@
       
     }
 
+    header {
+      color: #ecdf9c; /* Light Yellow */
+      padding: 30px 40px;
+      text-align: center;
+    }
+
+      h2 {
+      color: #ecdf9c;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      text-align: center;
+      padding: 10px 30px;
+      background: linear-gradient(to bottom, #911d6c, #000000);
+      border-radius: 8px;
+      width: fit-content;
+      margin: 0 auto 2rem;
+      
+      
+    }
+
+  h2::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60px;
+    background-color: #62d496;
+    margin: 12px auto 0;
+  }
+
 
     .case-study-grid {
     display: grid;
@@ -69,12 +98,20 @@
       position: absolute;
       bottom: 0;
       width: 100%;
-      background: rgba(3, 66, 66, 0.6);
+      background: rgba(102, 6, 22, 0.8);
       color: #ecdf9c;
       text-align: center;
-      padding: 20px;
+      padding: 10px;
       opacity: 0;
       transition: opacity 0.4s ease;
+      
+    }
+
+    .caption p {
+      font-family: "montserrat", 'sans-serif';
+      font-size: clamp(0.75rem, 2vw, 1rem);
+      font-style: italic;
+
     }
 
     .overlay-container:hover .base-image {
@@ -129,14 +166,14 @@
 
     .portfolio-caption h3 {
       margin: 0;
-      font-size: clamp(1rem, 2.5vw, 1.5rem);
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
       font-family: 'Segoe UI', sans-serif;
     }
 
     .portfolio-caption p {
       margin: 0.25rem 0 0;
       font-size: clamp(0.75rem, 2vw, 1rem);
-      font-family: 'Solway', serif;
+      font-family: "montserrat", 'sans-serif';
       font-style: italic;
     }
 
@@ -154,7 +191,13 @@
   </style>
 </head>
 <body>
+
   <div id="navbar"></div>
+
+  <header>
+    <h1>PORTFOLIO</h1>
+    <p>A showcase of my best work in digital/print design.</p>
+  </header>
 
   <!-- HERO SECTION: MOTION REEL -->
   <section class="portfolio-hero">
@@ -176,7 +219,6 @@
         <img src="images/case-study-thumbnails/ls-case-thumbnail.jpg" alt="Love's Shadow" class="base-image">
         <img src="images/case-study-thumbnails/ls-case-thumbnail-overlay.png" alt="Overlay" class="overlay-image">
         <div class="caption">
-          <h3>LOVE'S SHADOW</h3>
           <p>Animated Short Film Feature</p>
         </div>
         </a>
@@ -185,7 +227,6 @@
           <img src="images/case-study-thumbnails/viking-case-thumbnail.jpg" alt="A Viking Story" class="base-image">
           <img src="images/case-study-thumbnails/viking-case-thumbnail-overlay.png" alt="Overlay" class="overlay-image">
           <div class="caption">
-            <h3>A VIKING STORY</h3>
             <p>Animated Short</p>
           </div>
       </div>
@@ -193,9 +234,8 @@
           <img src="images/case-study-thumbnails/rogue-case-thumbnail.jpg" alt="Rogue Repeater" class="base-image">
           <img src="images/case-study-thumbnails/rogue-case-thumbnail-overlay.png" alt="Overlay" class="overlay-image">
           <div class="caption">
-            <h3>“ROGUE — REPEATER” [1988 TV AD PROMO]</h3>
             <p>Fictional TV AD Promo</p>
-      </div>
+          </div>
       
         </div>
     </div>
@@ -205,15 +245,44 @@
   <section class="portfolio-section">
     <h2>MOTION HIGHTLIGHTS</h2>
         <div class="portfolio-item">
-            <img src="images/blender.jpg" alt="The Howling Cat" class="portfolio-image">
+            <img src="images/blender.jpg" alt="3D Modeling" class="portfolio-image">
             <div class="portfolio-caption">
                 <h3>3D MODELING (BLENDER)</h3>
                 <p>Video Game Concept</p>
             </div>
+          </div>
+          <div class="portfolio-item">
+            <video 
+              class="portfolio-image" 
+              autoplay 
+              loop 
+              muted 
+              playsinline
+            >
+              <source src="video/production-studio-logo-reveal.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="portfolio-caption">
+              <h3>PERMANENT SLEEPOVER</h3>
+              <p>Production Studio Logo Reveal/Logo Design</p>
             </div>
+          </div> 
+        <div class="portfolio-item">
+          <img src="images/cat.jpg" alt="The Howling Cat" class="portfolio-image">
+          <div class="portfolio-caption">
+              <h3>THE HOWLING CAT</h3>
+              <p>Animated Short</p>
+          </div>
+        </div>  
+      <div class="portfolio-item">
+        <img src="images/dracula.jpg" alt="Vampire" class="portfolio-image">
+        <div class="portfolio-caption">
+            <h3>DRACULA WALK CYCLE</h3>
+            <p>Animated Short/Walk Cycle (+ Dynamic Walking, Running, Leaning, and Stair Climbing!)</p>
+        </div>
+      </div>  
     <div class="motion-collage">
       <img src="web-assets/motion2.jpg" alt="Motion Still 2">
-      <img src="web-assets/motion3.jpg" alt="Motion Still 3">
     </div>
   </section>
 
@@ -286,8 +355,25 @@
                 <h3>Watercolour Art</h3>
             </div>
         </div>
+        <div class="portfolio-item">
+          <img src="images/art/compressed-insta-01.jpg" alt="Watercolor 2" class="portfolio-image">
+          <div class="portfolio-caption">
+              <h3>Watercolour Art</h3>
+          </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/art/compressed-insta-02.jpg" alt="Watercolor 3" class="portfolio-image">
+        <div class="portfolio-caption">
+            <h3>Watercolour Art</h3>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/art/compressed-insta-03.jpg" alt="Watercolor 4" class="portfolio-image">
+        <div class="portfolio-caption">
+            <h3>Watercolour Art</h3>
+        </div>
+      </div>
       <img src="web-assets/watercolor2.jpg" alt="Watercolor 2">
-      <img src="web-assets/watercolor3.jpg" alt="Watercolor 3">
     </div>
   </section>
 

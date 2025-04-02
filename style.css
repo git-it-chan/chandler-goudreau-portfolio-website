@@ -9,6 +9,12 @@
     
   }
 
+  body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 
   .outfit-extralight {
     font-family: "Outfit", sans-serif;
@@ -119,6 +125,7 @@
     object-fit: cover;
     z-index: -1;
   }
+
 
   
   
@@ -496,3 +503,19 @@
   .hero-overlay p {
     font-size: clamp(1rem, 3vw, 1.5rem);
   }
+
+h1 {
+  font-size: clamp(2rem, 6vw, 4rem); /* Scales between 2rem and 4rem */
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4.5vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+}
+
+p, li, a, span {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+}
