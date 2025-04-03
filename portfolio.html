@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Chandler Goudreau | Porfolio</title><link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
   <script src="main.js"></script>
   <style>
@@ -21,9 +21,11 @@
 
     header {
       color: #ecdf9c; /* Light Yellow */
-      padding: 30px 40px;
+      padding: 30px 40px 240px;
       text-align: center;
+      
     }
+
 
       h2 {
       color: #ecdf9c;
@@ -54,6 +56,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 2rem;
+    
   }
 
   .stills-grid {
@@ -69,6 +72,9 @@
     max-width: 100%;
     cursor: pointer;
     margin-bottom: 2rem;
+    border-color:#ecdf9c;
+    border-style: groove;
+    border-radius: 6px;
     }
 
     .base-image, .overlay-image {
@@ -116,6 +122,7 @@
 
     .overlay-container:hover .base-image {
       filter: brightness(40%);
+      
     }
 
     .overlay-container:hover .overlay-image,
@@ -126,13 +133,14 @@
     .portfolio-item {
       position: relative;
       overflow: hidden;
-      border-radius: 12px;
       cursor: pointer;
       transition: transform 0.3s ease;
+      
     }
 
     .portfolio-item:hover {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      
     }
 
     .portfolio-image {
@@ -188,12 +196,14 @@
   <header>
     <h1>PORTFOLIO</h1>
     <p>A showcase of my best work in digital/print design.</p>
-    <h2>MOTION REEL</h2>
-    <p>1 minute of 35+ minutes worth of work from my first year.</p>
   </header>
+
+
+
 
   <!-- HERO SECTION: MOTION REEL -->
   <section class="portfolio-hero">
+    <h2>MOTION REEL</h2>
     <div class="video-wrapper">
       <iframe src="https://player.vimeo.com/video/909862220?h=0508b3cb8e" frameborder="0" allowfullscreen></iframe>
     </div>
