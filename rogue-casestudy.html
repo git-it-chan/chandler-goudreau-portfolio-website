@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chandler Goudreau — Portfolio Website</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<style>
+      
+      html, body {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow: hidden; /* Prevents double scrollbars */
+  }
+
+  .scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+
+  .scroll-section {
+    scroll-snap-align: start;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ecdf9c;
+    padding: 40px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  /* Optional overlay for readability */
+  .scroll-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Place content above overlay */
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Different background images for each section */
+  .section1 {
+    background-image: url('images/rogue-hero.jpg');
+  }
+
+  .section2 {
+    background-image: url('images/video-bg.jpg');
+  }
+
+  .section3 {
+    background-image: url('images/specs-bg.jpg');
+  }
+
+  .section4 {
+    background-image: url('images/rogue-case/rogue-bg-02.jpg');
+  }
+
+  .section5 {
+    background-image: url('images/rogue-case/rogue-bg-03.jpg');
+  }
+
+  .section6 {
+    background-image: url('images/rogue-case/rogue-bg-02.jpg');
+  }
+
+  .section7 {
+    background-image: url('images/rogue-case/rogue-bg-03.jpg');
+  }
+
+  .section8 {
+    background-image: url('images/rogue-case/rogue-bg-02.jpg');
+  }
+
+  .section9 {
+    background-image: url('images/rogue-case/rogue-bg-03.jpg');
+  }
+
+  .section10 {
+    background-image: 
+  }
+
+  .section11 {
+    background-image: url('images/rogue-case/rogue-bg-03.jpg');
+  }
+
+
+  /* Responsive iframe styling */
+  iframe {
+    width: 80vw;
+    height: 45vw; /* 16:9 ratio */
+    max-width: 960px;
+    max-height: 540px;
+    border: none;
+    border-radius: 8px;
+  }
+
+
+    body{
+
+      background-color: #1a0325;
+
+    }
+
+    h2 {
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ecdf9c;
+    background: linear-gradient(to bottom, #911d6c, #000);
+    padding: 8px 20px;
+    display: inline-block;
+    margin: 2rem auto;
+  }
+
+  blockquote {
+    font-style: italic;
+    border-left: 4px solid #911d6c;
+    padding-left: 16px;
+    color: #ecdf9c;
+    background-color: rgba(255, 255, 255, 0.03);
+    margin: 2rem auto;
+    max-width: 700px;
+  }
+
+
+  @media (max-width: 768px) {
+  .scroll-section {
+    padding: 20px;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+</style>
+
+<body>
+  <div id="navbar"></div>
+
+  <div class="scroll-container">
+    <section class="scroll-section section1" style="background-image: url('images/rogue-case/rogue-bg.jpg');">
+      <div class="content">
+        <img src="images/rogue-case/rogue-title-overlay.png">
+        <h1>“ROGUE — REPEATER”</h1>
+        <p class="subtitle">[1988 TV AD PROMO] · Branding Package Project</p>
+      </div>
+    </section>
+
+    <section class="scroll-section section2">
+      <div class="content">
+        <iframe src="https://player.vimeo.com/video/yourVideoID" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="scroll-section section3">
+      <div class="content">
+        <h2>Project Specs</h2>
+        <div class="specs-grid">
+          <div><strong>PROJECT TYPE:</strong> Branding Package</div>
+          <div><strong>DATE:</strong> April 24, 2023</div>
+          <div><strong>RUNTIME:</strong> 1m 1s</div>
+          <div><strong>RESOLUTION:</strong> 1920x1080</div>
+          <div><strong>FRAMERATE:</strong> 29.97 fps</div>
+          <div><strong>TOOLS:</strong> AE, PR, PS, AI, Gen-1, Reaper</div>
+          <div><strong>SKILLS:</strong> Logo Design, VFX, Music, AI, Editing</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scroll-section section4">
+      <div class="content">
+        <blockquote>
+          ““In this high-octane action thriller, a man finds himself trapped in a time loop, doomed to repeat the same day over and over again. Desperate to break the cycle and escape the endless dread, he sets out on a mission to take down the witch and his minions that have been plaguing his city. An anti-hero armed with an array of weapons and new skills he learns with each iteration, he becomes a force to be reckoned with. But as the bodies pile up and the stakes get higher, his psyche lessens as he begins to question his own humanity. With a pumping synthwave soundtrack and a retro '80s aesthetic, this show is a non-stop thrill ride that will leave you on the edge of your seat!”
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="scroll-section section5">
+      <div class="content">
+        <h2>Pre-Production</h2>
+        <div class="image-grid">
+          <img src="images/rogue-case/rogue-case-01.png">
+        </div>
+        <p>I started by sketching a loose storyboard...</p>
+      </div>
+    </section>
+
+    <section class="scroll-section section6">
+      <div class="content">
+        <h2>Production & Post</h2>
+        <img src="images/green-screen.jpg" alt="Behind the Scenes" class="full-width">
+        <p>Filming was straightforward, but post-production took over...</p>
+      </div>
+    </section>
+
+    <section class="scroll-section section7">
+      <div class="content">
+        <h2>AI + Experimental Techniques</h2>
+        <video autoplay loop muted playsinline class="short-loop">
+          <source src="video/glitch-bike.mp4" type="video/mp4">
+        </video>
+        <p>Runway’s Gen-1 turned my toy bike into something sci-fi.</p>
+      </div>
+    </section>
+
+    <section class="scroll-section section8">
+      <div class="content">
+        <h2>Logo + Branding</h2>
+        <div class="image-grid">
+          <video autoplay loop muted playsinline>
+            <source src="video/logo.mp4" type="video/mp4">
+          </video>
+          <video autoplay loop muted playsinline>
+            <source src="video/mascot.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p>Weird '80s vibes? Nailed it.</p>
+      </div>
+    </section>
+
+    <section class="scroll-section section9">
+      <div class="content">
+        <h2>Theme Music</h2>
+        <img src="images/rogue-case/rogue-daw.jpg" alt="Reaper DAW Project" class="full-width">
+        <blockquote>"Time slips through my hands..."</blockquote>
+        <p>Retro synths, gated snares, cyberpunk vibes.</p>
+      </div>
+    </section>
+
+    <section class="scroll-section section10" style="background-image: url('images/rogue-case/rogue-bg-04.jpg');">
+      <div class="content">
+        <p>This was a major turning point in my After Effects journey.</p>
+      </div>
+    </section>
+
+    <section class="scroll-section section11">
+      <div class="content">
+        <h2>Legacy + Easter Eggs</h2>
+        <div class="image-grid">
+          <img src="images/rogue-case/rogue-mockup.jpg" alt="Cameo">
+          <img src="images/rogue-case/rogue-example-01.jpg" alt="Cameo">
+          <img src="images/rogue-case/rogue-example-02.jpg" alt="Cameo">
+        </div>
+        <p>Rogue Repeater lives on... 👁</p>
+      </div>
+    </section>
+  </div>
+
+  <div id="footer"></div>
+</body>
+
+</html>

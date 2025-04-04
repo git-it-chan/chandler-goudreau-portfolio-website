@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Chandler Goudreau | Porfolio</title><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
+  <script src="main.js"></script>
+  <style>
+  
+  html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-section {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+  color: #ecdf9c;
+  background-color: #000;
+  position: relative;
+  text-align: center;
+}
+
+.hero-banner {
+    background-image: url('images/viking-case/viking-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-logo {
+  max-width: 600px;
+  width: 80%;
+  z-index: 2;
+}
+
+.viking-bg {
+
+    background-image: url('images/viking-case/viking-bg-02.jpg');
+
+}
+
+.section-footer {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  color: #ecdf9c;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+
+.scroll-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.content-box {
+  max-width: 800px;
+  z-index: 2;
+  position: relative;
+}
+
+.image-section {
+  background-size: cover;
+  background-position: center;
+}
+
+iframe {
+  width: 80vw;
+  height: 45vw;
+  max-width: 960px;
+  max-height: 540px;
+  border-radius: 10px;
+  border: none;
+  z-index: 2;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 4px solid #911d6c;
+  padding-left: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin: 2rem auto;
+}
+
+.two-column-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.column-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.column-image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.column-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+    
+  </style>
+</head>
+<body>
+
+  <div id="navbar"></div>
+
+    <div class="scroll-container">
+  
+      <!-- Section 1: Hero Banner -->
+      <section class="scroll-section hero-banner viking-hero">
+        <img src="images/viking-case/viking-title-overlay.png" alt="A Viking Story" class="hero-logo">
+        <div class="section-footer">A VIKING STORY — Animated Short</div>
+      </section>
+  
+      <!-- Section 2: Vimeo Embed -->
+      <section class="scroll-section">
+        <iframe src="https://player.vimeo.com/video/912476000" frameborder="0" allowfullscreen></iframe>
+      </section>
+  
+      <!-- Section 3: Project Info -->
+      <section class="scroll-section">
+        <div class="content-box">
+            <div class="viking-bg">
+                <h2>A VIKING STORY</h2>
+                <p><strong>Type:</strong> Animated Short</p>
+                <p><strong>Brief:</strong> Animate any word in a way that the animation reflects its meaning. I chose to make a war epic.</p>
+                <p><strong>Duration:</strong> May 10–24, 2023 (2 weeks)</p>
+                <blockquote>
+                    An epic tale of an army of Vikings setting off to battle and invade the King’s land.
+                </blockquote>
+                <p><strong>Tools:</strong> After Effects, Photoshop, Illustrator, Reaper</p>
+                <p><strong>Skills:</strong> Animation, Illustration, Voice Acting, Music Composition, Sound Mixing</p>
+                <p><strong>Specs:</strong> 1920x1080 · 24fps · 2m 29s · May 24, 2023</p>
+            </div>
+        </div>
+      </section>
+  
+      <!-- Section 4: Still Image -->
+      <section class="scroll-section image-section" style="background-image: url('images/viking-case/viking-bg-03.jpg')></section>
+  
+      <!-- Section 5: One Paragraph -->
+      <section class="scroll-section">
+        <div class="content-box">
+          <p>
+            Originally, I was going to choose the word "twist" and have the letters dance with each other—but I ended up doing a full-on war epic short film with a much better word.
+          </p>
+        </div>
+      </section>
+  
+      <!-- Section 6–10: Sketches, Storyboard, Styleboard, Styleframe, Asset Collage -->
+      <section class="scroll-section image-section" style="background-image: url('images/viking-case/viking-sketches.png');"></section>
+      <section class="scroll-section image-section" style="background-image: url('images/viking-case/viking-storyboard.jpg');"></section>
+      <section class="scroll-section image-section" style="background-image: url('images/viking-case/viking-styleboard.jpg');"></section>
+      <section class="scroll-section image-section" style="background-image: url('images/viking-case/viking-styleframe.jpg');"></section>
+      <section class="scroll-section image-section" style="background-image: url('images/viking-case/viking-assets.jpg');"></section>
+      <section class="scroll-section image-section" style="background-image: url('images/asset-collage.jpg');"></section>
+  
+      <!-- Section 11: Mockup -->
+      <section class="scroll-section image-section" style="background-image: url('images/mockup.jpg');"></section>
+  
+      <!-- Section 12: Achievements + Challenges -->
+      <section class="scroll-section two-column-section">
+        <div class="column-text">
+          <h2>Achievements</h2>
+          <p>
+            Despite only having worked with After Effects for four months, I taught myself how to do walk cycles ahead of schedule. I took inspiration from Sigur Rós and wrote a song with gibberish lyrics that still sounded beautiful. The process included translating the synopsis into Icelandic and adapting it into musical rhythm.
+          </p>
+          <h2>Challenges</h2>
+          <p>
+            One scene had to be cut short due to time—but I reimagined it creatively, and the scene ended up being a class favourite. This taught me that time pressure can often lead to unexpected breakthroughs.
+          </p>
+        </div>
+        <div class="column-image">
+          <img src="images/viking-case/viking.png" alt="Achievement Art">
+        </div>
+      </section>
+  
+    </div>
+  
+
+  <div id="footer"></div>
+</body>
+</html>
