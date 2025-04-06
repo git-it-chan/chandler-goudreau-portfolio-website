@@ -11,59 +11,140 @@
 
   <style>
 
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+}
 
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-    }
+/* Navbar Container */
+.navbar {
+  background-color: #581235;
+  color: #f7e275;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 3px solid #f7e275;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
 
-    /* Navbar Container */
-    .navbar {
-      background-color: #581235; /* Burgundy */
-      color: #f7e275;            /* Light Yellow */
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      border-bottom: 3px solid #f7e275;
-    }
+/* Logo */
+.logo img {
+  height: 60px;
+}
 
-    /* Brand Name */
-    .logo img {
-      font-size: 24px;
-      font-weight: bold;
-      height: 60px; /* or whatever matches the logo height */
-      display: flex;
-      align-items: center;
-      
-    }
+/* Base state (hidden) */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
 
-    .logo img {
-    color: #911d6c;
-    text-decoration: none;
-    font-size: 14px;
+.nav-links a {
+  color: #f7ebb0;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #a2f0f0;
+}
+
+/* Hamburger */
+.hamburger-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.hamburger-icon span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #f7e275;
+  border-radius: 2px;
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    height: auto;
+    align-items: flex-start;
   }
 
-    .logo span {
-      display: block;
-      font-size: 14px;
-      font-weight: normal;
-      color: #ffffff;
-    }
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #581235;
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
 
-    /* Navigation Links */
-    .nav-links a {
-      color: #f7ebb0;
-      text-decoration: none;
-      margin-left: 30px;
-      font-size: 18px;
-      transition: color 0.3s;
-    }
+  .nav-links.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
 
-    .nav-links a:hover {
-      color: #a2f0f0;
-    }
+  .nav-links a {
+    padding: 15px 20px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav-links.active a {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav-links.active a:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+
+  .nav-links.active a:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+
+  .nav-links.active a:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+
+  .nav-links.active a:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Hide nav links by default on mobile */
+  .nav-links:not(.active) {
+    display: flex;
+  }
+}
+
 
  
   </style>
@@ -83,6 +164,20 @@
 
     </nav>
     <div id="hamburger" class="hamburger-icon" style="width: 50px; height: 50px; cursor: pointer;"></div>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.querySelector(".nav-links");
+    
+      hamburger.innerHTML = `
+        <span></span>
+        <span></span>
+        <span></span>
+      `;
+    
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
   </header>
 </body>
 </html>

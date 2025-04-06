@@ -1,163 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Chandler Goudreau | Love's Shadow</title><link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chandler Goudreau | Love's Shadow</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
   <script src="main.js"></script>
-
   <style>
-
-    body {
-        background-color: black;
+    :root {
+      --main-bg: #000;
+      --text-light: #ecdf9c;
+      --accent: #911d6c;
     }
 
-    .scroll-container {
-      scroll-snap-type: y mandatory;
-      overflow-y: scroll;
-      height: 100vh;
-    }
-
-    
-    .portfolio-item {
-      position: relative;
-      overflow: hidden;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-
-    .portfolio-item:hover {
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .portfolio-image {
-      width: 100%;
-      display: block;
-      height: auto;
-      transition: filter 0.4s ease;
-    }
-
-    .portfolio-item:hover .portfolio-image {
-      filter: brightness(90%);
-      
-      
-    }
-
-    .portfolio-caption {
-      position: absolute;
-      bottom: 0;
-      padding: 20px;
-      color: #ecdf9c;
-      background: rgba(3, 66, 66, 0.6);
-      width: 100%;
-      opacity: 0;
-      transition: opacity 0.4s ease;
-    }
-
-    .portfolio-item:hover .portfolio-caption {
-      opacity: 1;
-    }
-
-    .slide {
-      height: 100vh;
-      width: 100%;
-      scroll-snap-align: start;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background-size: cover;
-      background-position: center;
-      padding: 40px;
+    * {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
     }
 
-    .slide h1, .slide h2, .slide p {
-      color: #ecdf9c;
+    html, body {
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+      background: var(--main-bg);
+      scroll-behavior: smooth;
+      overflow: hidden;
+    }
+
+    .scroll-container {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
+
+    .slide {
+      scroll-snap-align: start;
+      height: 100vh;
+      width: 100%;
+      padding: 60px 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .slide h1, .slide h2, .slide p, .slide blockquote {
+      color: var(--text-light);
       text-align: center;
-      max-width: 800px;
+      max-width: 900px;
+    }
+
+    .slide h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-family: 'Fjalla One', sans-serif;
+    }
+
+    .slide h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
     }
 
     .video-wrapper {
-        position: relative;
-        width: 100vw;
-        height: 56.25vw; /* Maintain 16:9 ratio based on viewport width */
-        margin: 0 auto;
-        padding: 0;
+      width: 100vw;
+      height: 56.25vw;
+      max-height: 100vh;
+      position: relative;
     }
 
     .video-wrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: none;
+      top: 0;
+      left: 0;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      color: var(--text-light);
+      max-width: 1200px;
+      margin-top: 2rem;
+      text-align: left;
+    }
+
+    .info-card {
+      background-color: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    blockquote {
+      font-style: italic;
+      margin-top: 1rem;
+      color: var(--text-light);
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+    }
+
+    .image-pair, .image-trio {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .image-pair img, .image-trio img {
+      width: 45%;
+      border-radius: 8px;
+      max-width: 400px;
+    }
+
+    .slide img.fullscreen {
+      width: 100%;
+      max-height: 90vh;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .overlay-text {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 800px;
+    }
+
+    .two-column {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      max-width: 1000px;
+    }
+
+    .two-column .text, .two-column .img {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    @media(max-width: 768px) {
+      .image-pair img, .image-trio img {
         width: 100%;
-        height: 100%;
-        border: none;
+      }
+      .two-column {
+        flex-direction: column;
+      }
     }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
   </style>
 </head>
 
 <body>
-
 <div id="navbar"></div>
-
   <div class="scroll-container">
 
-    <!-- VIDEO SLIDE -->
-    <section class="slide" style="background-color: #000;">
+    <!-- 1. Hero: Vimeo Embed -->
+    <section class="slide">
       <div class="video-wrapper">
-        <iframe 
-          src="https://player.vimeo.com/video/912491767?h=5d05b565df" 
-          frameborder="0" 
-          allowfullscreen>
-        </iframe>
+        <iframe src="https://player.vimeo.com/video/912491767?h=5d05b565df" allowfullscreen></iframe>
       </div>
     </section>
 
-    <!-- TITLE SLIDE -->
+    <!-- 2. Title Slide -->
     <section class="slide" style="background-image: url('images/hero.jpg');">
-      <h1>LOVE’S SHADOW</h1>
-      <p>An Animated Short Film Feature</p>
+      <div class="overlay-text">
+        <h1>Love’s Shadow</h1>
+        <p>An Animated Short Film Feature</p>
+      </div>
     </section>
 
-    <!-- OVERVIEW -->
+    <!-- 3. Info Grid -->
     <section class="slide">
-      <h2>Overview</h2>
-      <p>This was a year-long production with over 80 shots animated in After Effects and Blender.</p>
+      <h2>Project Overview</h2>
+      <div class="info-grid">
+        <div class="info-card"><strong>Type:</strong><br>Animated Short</div>
+        <div class="info-card"><strong>Brief:</strong><br>Create an animated short based on voice-over audio</div>
+        <div class="info-card"><strong>Tools:</strong><br>AE, PS, AI, PR, Procreate, Reaper</div>
+        <div class="info-card"><strong>Skills:</strong><br>Animation, Rotoscoping, Music, Acting</div>
+        <div class="info-card"><strong>Specs:</strong><br>1920x1080, 24fps, 13m 11s</div>
+        <div class="info-card"><strong>Date:</strong><br>Dec.13.2023</div>
+      </div>
+      <blockquote>
+        Kinda' inspired by the novels from the Brontë sisters, this is a period-piece romance set in the 1800s—however, nothing is what it seems.
+      </blockquote>
     </section>
 
-    <!-- IMAGE SLIDE -->
+    <!-- 4. Paragraph Section -->
+    <section class="slide" style="background-image: url('images/your-still.jpg');">
+      <div class="overlay-text">
+        <p>This was my most ambitious and unique submission, featuring two different animation styles. I wrote, directed, animated, acted, composed—everything. I drank way too many energy drinks for this one…</p>
+      </div>
+    </section>
+
+    <!-- 5. Pre-Production -->
     <section class="slide">
-    
-        <div class="portfolio-item">
-            <img src="images/ls-case/ls-mood-board-720p.jpg" alt="Mood Board" style="width: 80%; border-radius: 10px;">
-            <div class="portfolio-caption">
-                <h3>Mood Board</h3>
-            </div>
-            </div>
-        <div class="portfolio-item">
-            <img src="images/ls-case/ls-script.jpg" alt="Script" style="width: 80%; border-radius: 10px;">
-            <div class="portfolio-caption">
-                <h3>Script (Final Draft)</h3>
-            </div>
+      <h2>Pre-Production</h2>
+      <div class="image-pair">
+        <img src="images/ls-case/ls-mood-board-720p.jpg" alt="Mood Board">
+        <img src="images/ls-case/ls-script.jpg" alt="Script">
+      </div>
+      <p>I wrote two storyboards, one for animation and one for live-action blocking. I created animatics, recorded voices, and mapped out everything in advance.</p>
+    </section>
+
+    <!-- 6. Character / Design -->
+    <section class="slide">
+      <h2>Style & Design</h2>
+      <div class="image-trio">
+        <img src="images/ls-case/ls-character-concepts.jpg" alt="Early Design">
+        <img src="images/final-character.jpg" alt="Final Concept">
+        <img src="images/styleframes.jpg" alt="Styleframes">
+      </div>
+    </section>
+
+    <!-- 7. Production -->
+    <section class="slide">
+      <h2>Production</h2>
+      <div class="two-column">
+        <div class="text">
+          <p>I stayed organized with 100+ lines of dialogue, color-coded tracks, and cue sheets. I filmed rotoscoping scenes four times for each character. Premiere was used for editing footage before animating.</p>
         </div>
+        <div class="img">
+          <img src="images/reaper.jpg" alt="Voice Cues" style="width: 100%; border-radius: 10px;">
+        </div>
+      </div>
     </section>
-    
 
-    <!-- PROCESS -->
+    <!-- 8. Post Production -->
     <section class="slide">
-      <h2>The Process</h2>
-      <p>Combining 3D modeling with 2D character rigs to create a hybrid animation style.</p>
+      <h2>Post-Production</h2>
+      <p>Sound design, opening credits, color grading, grain, and blending animation with live action. This was the glue that tied everything together.</p>
+      <div class="image-pair">
+        <video autoplay loop muted playsinline><source src="video/title.mp4" type="video/mp4"></video>
+        <video autoplay loop muted playsinline><source src="video/effects.mp4" type="video/mp4"></video>
+      </div>
+    </section>
+
+    <!-- 9. Final Still -->
+    <section class="slide">
+      <img src="images/ls-case/ls-background-03.jpg" class="fullscreen" alt="Final Still">
+    </section>
+
+    <!-- 10. Achievements & Challenges -->
+    <section class="slide" style="background-image: url('images/ls-case/ls-background-02.jpg');">
+      <div class="overlay-text">
+        <h2>Reflections</h2>
+        <p><strong>Achievements:</strong> This piece pushed my technical and creative limits. I built complex rigs, composed a full soundtrack, and took my storytelling to the next level.</p>
+        <p><strong>Challenges:</strong> Rotoscoping 6+ minutes nearly broke me. I sacrificed so much in my personal life for this passion project—but it was worth every frame.</p>
+      </div>
     </section>
 
   </div>

@@ -57,6 +57,15 @@
 
 }
 
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+
 .section-footer {
   position: absolute;
   bottom: 30px;
@@ -73,8 +82,10 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  
 }
+
+
 
 .content-box {
   max-width: 800px;
@@ -83,8 +94,10 @@
 }
 
 .image-section {
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000; /* or another fallback color */
 }
 
 iframe {
@@ -112,6 +125,7 @@ blockquote {
   justify-content: center;
   align-items: center;
   text-align: left;
+  background-color: rgb(5, 44, 49);
 }
 
 .column-text {
@@ -168,7 +182,8 @@ blockquote {
       </section>
   
       <!-- Section 4: Still Image -->
-      <section class="scroll-section image-section" style="background-image: url('images/viking-case/viking-bg-03.jpg')></section>
+     <section class="scroll-section image-section" style="background-image: url('images/viking-case/viking-bg-03.jpg');"></section>
+
   
       <!-- Section 5: One Paragraph -->
       <section class="scroll-section">
@@ -185,10 +200,9 @@ blockquote {
       <section class="scroll-section image-section" style="background-image: url('images/viking-case/viking-styleboard.jpg');"></section>
       <section class="scroll-section image-section" style="background-image: url('images/viking-case/viking-styleframe.jpg');"></section>
       <section class="scroll-section image-section" style="background-image: url('images/viking-case/viking-assets.jpg');"></section>
-      <section class="scroll-section image-section" style="background-image: url('images/asset-collage.jpg');"></section>
-  
+     
       <!-- Section 11: Mockup -->
-      <section class="scroll-section image-section" style="background-image: url('images/mockup.jpg');"></section>
+      <section class="scroll-section image-section" style="background-image: url('images/viking-case/viking-bg-04.jpg');"></section>
   
       <!-- Section 12: Achievements + Challenges -->
       <section class="scroll-section two-column-section">
@@ -199,17 +213,17 @@ blockquote {
           </p>
           <h2>Challenges</h2>
           <p>
-            One scene had to be cut short due to time—but I reimagined it creatively, and the scene ended up being a class favourite. This taught me that time pressure can often lead to unexpected breakthroughs.
+            One scene had to be cut short due to time constraints. However, I took an even more creative approach to the setback, and that scene ended up being a class favourite. This taught me that time pressure can often lead to unexpected breakthroughs.
           </p>
         </div>
         <div class="column-image">
           <img src="images/viking-case/viking.png" alt="Achievement Art">
         </div>
       </section>
-  
+      
     </div>
+    <div id="footer"></div>
   
 
-  <div id="footer"></div>
 </body>
 </html>
