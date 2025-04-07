@@ -21,10 +21,66 @@ body {
   background-position: center;  /* Optional to center the image */
 }
 
-.hero {
 
 
+
+.button-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
+
+.button-7 {
+  text-decoration: none;
+  background-color: #a01764;
+  color: #eee099;
+  padding: 14px 28px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  box-shadow: rgba(255, 255, 255, 0.4) 0 3px 0 0 inset;
+  font-family: 'Solway', serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: inline-block;
+  transition: all 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-7.outline {
+  background-color: transparent;
+  color: #eee099;
+  border: 2px solid #eee099;
+  box-shadow: none;
+}
+
+.button-7:hover,
+.button-7:focus {
+  background-color: #5c0741;
+  color: #f3efdb;
+  transform: scale(1.05);
+}
+
+.button-7.outline:hover {
+  background-color: #eee099;
+  color: #581235;
+  border-color: #eee099;
+}
+
+.button-7:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+
+.button-7:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+
+
+
+
 
 
 </style>
@@ -33,20 +89,23 @@ body {
 
   <div id="navbar"></div>
 
-  <section class="hero">
-    <video autoplay muted loop playsinline class="hero-video">
-      <source src="web-assets/hero-banner.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-    <div class="hero-overlay">
-        <div class="caption-box">
-          <a href="https://vimeo.com/909862220" class="button-7"><h2>MOTION REEL 2024</h2></a>
+    <section class="hero">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="web-assets/hero-banner.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-overlay">
+        <h2>CREATING A NARRATIVE—BY DESIGN AND SONG.</h2>
+        <p>A multi-disciplinary artist blending design, animation, and original music.</p>
+        <div class="button-row">
+          <a href="https://vimeo.com/909862220" class="button-7"><h2>MOTION REEL</h2></a>
+          <a href="contact.html" class="button-7 outline"><h2>CONTACT</h2></a>
         </div>
-    </div>
-    
-  </section>
+      </div>
+    </section>
+  
+
 
   <div id="footer"></div>
 </body>
 </html>
-s

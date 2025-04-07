@@ -4,7 +4,7 @@
         <!-- Column 1: Contact -->
         <div class="footer-col contact-col">
           <p>If you like what you see and want to work together, send me an email!</p>
-          <a href="contact.html" class="button-secondary-large">Contact</a>
+          <a href="contact.html" class="button-secondary-large">CONTACT</a>
         </div>
   
         <!-- Column 2: Logo + Tagline -->
@@ -52,6 +52,7 @@
     color: #911d6c;
     padding: 60px 20px;
     font-family: 'Noto Serif', serif;
+    
   }
 
   .footer-container {
@@ -93,6 +94,27 @@
     line-height: 1.6;
   }
 
+  .social-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* aligns text start relative to icons */
+  margin: 0 auto; /* centers the column itself */
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #911d6c;
+  text-decoration: none;
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
+}
+
+.social-icon {
+  flex-shrink: 0;
+}
+
   
   .social-col a {
     display: flex;
@@ -128,5 +150,9 @@
     .footer-col {
       margin-bottom: 30px;
     }
+
+    .social-col {
+    align-items: center; /* center icons + text together */
+  }
   }
 </style>

@@ -179,31 +179,35 @@
     overflow: hidden;
   }
   
+  
   .hero-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;  /* 👈 this prevents cutting off edges */
+    background-color: #ffffff; /* or match your page background */
     z-index: -1;
   }
 
 
   
-  
   .hero-overlay {
     position: relative;
-    z-index: 1;
+    z-index: 2;
+    height: 100%;
     width: 100%;
-    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.3); /* subtle overlay for readability */
+    align-items: center;
+    padding: 40px 20px;
+    color: #eee099;
     text-align: center;
   }
+  
 
   .caption-box {
     
@@ -307,48 +311,7 @@
 
 
 
-  .button-7 {
-    background-color: #a01764;
-    border: 1px solid transparent;
-    border-radius: 6px;
-    box-shadow: rgba(255, 255, 255, .4) 0 3px 0 0 inset;
-    box-sizing: border-box;
-    color: #eee099;
-    cursor: pointer;
-    display: inline-block;
-    font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 1.15385;
-    margin: 0;
-    outline: none;
-    padding: 8px .8em;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: baseline;
-    white-space: nowrap;
-    transition: all 0.3s ease;
-  }
-  
-  .button-7:hover,
-  .button-7:focus {
-    background-color: #5c0741;
-    color: #f3efdb;
-    transform: scale(1.10);
-  }
-  
-  .button-7:focus {
-    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
-  }
-  
-  .button-7:active {
-    background-color: #0064bd;
-    box-shadow: none;
-  }
+
 
 
 
@@ -551,6 +514,8 @@
       transition: transform 0.3s ease, opacity 0.3s ease;
       z-index: 999;
     }
+
+    
   
     .nav-links.active {
       transform: translateY(0);
@@ -558,6 +523,7 @@
       pointer-events: auto;
     }
   }
+
 
   .hero-overlay h1 {
     font-size: clamp(1.5rem, 5vw, 3.5rem);
