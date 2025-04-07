@@ -14,7 +14,7 @@
     body {
       margin: 0;
       font-family: 'Noto Serif', serif;
-      background-color: #8F2064;
+      background-image: url("web-assets/splash-bg.jpg");
       color: #ecdf9c;
       min-height: 100vh;
     }
@@ -36,7 +36,6 @@
       justify-content: center;
       align-items: stretch;
       gap: 40px;
-      max-width: 1200px;
       margin: auto;
       padding: 80px;
       flex-wrap: wrap;
@@ -86,8 +85,6 @@
     }
 
         .video-box {
-      flex: 1;
-      min-width: 300px;
       max-width: 100%;
       display: flex;
       justify-content: center;
@@ -99,7 +96,7 @@
       width: 100%;
       height: auto;
       max-width: 1300px;
-      border-radius: 12px;
+      border-radius: 6px;
       object-fit: contain;
     }
 
@@ -107,7 +104,7 @@
       flex: 1;
       min-width: 300px;
       max-width: 600px;
-      background-color: #0f6868;
+      background-color: #7a1347;
       padding: 30px 40px;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -117,7 +114,7 @@
 
       font-family: 'Segoe UI', sans-serif;
       font-weight: 700;
-      padding-bottom: 1%;
+      padding-bottom: 2rem;
 
     }
 
@@ -148,26 +145,14 @@
       min-height: 120px;
     }
 
-    .custom-button {
-      background-color: #ecdf9c;
-      color: #6d1c4d;
-      border: none;
-      border-radius: 6px;
-      padding: 12px 20px;
-      font-size: 16px;
-      font-weight: bold;
-      margin-top: 20px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
 
-    .custom-button:hover {
-      background-color: #1ca0a0;
-    }
+
+
 
     .contact-page-social-link {
 
     font-size: clamp(1rem, 3vw, 1.5rem);
+
     }
 
     /* Mobile Responsive */
@@ -229,7 +214,7 @@
     <div class="left-column">
       <div class="video-box">
         <video autoplay muted loop playsinline>
-          <source src="web-assets/render-banner.mp4" type="video/mp4" />
+          <source src="video/typing-loop.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

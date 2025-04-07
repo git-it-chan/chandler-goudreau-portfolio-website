@@ -3,7 +3,8 @@ window.addEventListener("DOMContentLoaded", () => {
     .then(res => res.text())
     .then(data => {
       document.getElementById("navbar").innerHTML = data;
-      // Now that navbar is loaded, initialize Lottie
+
+      // Initialize hamburger Lottie
       const hamburger = lottie.loadAnimation({
         container: document.getElementById('hamburger'),
         renderer: 'svg',
@@ -12,8 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
         path: 'web-assets/lottie-hamburger-menu.json',
       });
 
-      hamburger.setSpeed(3); // 2x faster (1 = normal speed)
-
+      hamburger.setSpeed(3);
       let menuOpen = false;
       const navLinks = document.querySelector('.nav-links');
 
@@ -27,13 +27,24 @@ window.addEventListener("DOMContentLoaded", () => {
         }
         menuOpen = !menuOpen;
       });
+
+      // 👉 Initialize underline animations
+      document.querySelectorAll('.underline-animation').forEach(el => {
+        lottie.loadAnimation({
+          container: el,
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          path: 'web-assets/lottie-load-bar.json',
+        });
+      });
+
     });
-    });
 
-
-
+  // Load footer
   fetch("footer.html")
     .then(res => res.text())
     .then(data => {
       document.getElementById("footer").innerHTML = data;
     });
+});

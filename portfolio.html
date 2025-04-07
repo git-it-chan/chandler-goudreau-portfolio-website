@@ -40,7 +40,38 @@
       
     }
 
+    
+    h2 {
+      color: #ecdf9c;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      text-align: center;
+      padding: 10px 30px;
+      background: linear-gradient(to bottom, #911d6c, #000000);
+      border-radius: 8px;
+      width: fit-content;
+      margin: 0 auto 2rem;
+      
+      
+    }
+    
 
+
+    .header-load {
+      
+      color: #ecdf9c;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      text-align: center;
+      padding: 10px 30px;
+      border-radius: 8px;
+      width: fit-content;
+      margin: 0 auto 2rem;
+
+
+    }
+
+/*
       h2 {
       color: #ecdf9c;
       font-family: 'Fjalla One', sans-serif;
@@ -63,7 +94,25 @@
     background-color: #62d496;
     margin: 12px auto 0;
   }
+*/
 
+
+  .fancy-header {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: clamp(1.5rem, 4vw, 2.8rem);
+}
+
+.underline-animation {
+  width: 35%;
+  margin: auto auto;
+  margin-top: 8px;
+  pointer-events: none;
+  font-size: clamp(0.1rem, 0.5vw, 0.4rem);
+  position: relative;
+}
 
     .case-study-grid {
     display: grid;
@@ -189,7 +238,7 @@
     .portfolio-caption h3 {
       margin: 0;
       font-size: clamp(1rem, 2.5vw, 1.2rem);
-      font-family: 'Segoe UI', sans-serif;
+      font-family: "outfit", 'sans-serif'
     }
 
     .portfolio-caption p {
@@ -217,7 +266,10 @@
 
   <!-- HERO SECTION: MOTION REEL -->
   <section class="portfolio-hero">
-    <h2>MOTION REEL</h2>
+    <header class="header-load">
+      <h2>MOTION REEL</h2>
+      <div class="underline-animation" id="underline1"></div>
+    </header>
     <div class="video-wrapper">
       <iframe src="https://player.vimeo.com/video/909862220?h=0508b3cb8e" frameborder="0" allowfullscreen></iframe>
     </div>
@@ -226,7 +278,10 @@
 
   <!-- CASE STUDIES -->
   <section class="portfolio-section">
-    <h2>CASE STUDIES</h2>
+    <header class="header-load">
+      <h2>CASE STUDIES</h2>
+      <div class="underline-animation" id="underline2"></div>
+    </header>
     <div class="case-study-grid">
       <div class="overlay-container">
         <a href="ls-casestudy.html">
@@ -260,7 +315,10 @@
 
   <!-- MOTION COLLAGE -->
   <section class="portfolio-section">
-    <h2>MOTION HIGHTLIGHTS</h2>
+    <header class="header-load">
+      <h2>MOTION HIGHTLIGHTS</h2>
+      <div class="underline-animation" id="underline3"></div>
+    </header>
         <div class="portfolio-item">
             <img src="images/blender.jpg" alt="3D Modeling" class="portfolio-image">
             <div class="portfolio-caption">
@@ -308,7 +366,10 @@
 
   <!-- DIGITAL & PRINT -->
   <section class="portfolio-section">
-    <h2>DIGITAL & PRINT DESIGN</h2>
+    <header class="header-load">
+       <h2>DIGITAL & PRINT DESIGN</h2>
+       <div class="underline-animation" id="underline4"></div>
+    </header>
     <div class="case-study-grid">
       <div class="portfolio-item">
         <img src="images/portfolio-pieces/album-03.jpg" alt="THE SEANCE - The Twilight of Chiaroscuro" class="portfolio-image">
@@ -396,7 +457,10 @@
 
   <!-- WATERCOLOUR ART -->
   <section class="portfolio-section">
-    <h2>ART PIECES</h2>
+    <header class="header-load">
+      <h2>ART PIECES</h2>
+      <div class="underline-animation" id="underline5"></div>
+    </header>
     <p class="section-description">
     </p>
     <div class="case-study-grid">

@@ -18,15 +18,17 @@
     body {
       margin: 0;
       font-family: 'Outfit', sans-serif;
-      background-color: #380231;
+      background-color: #33072a;
       color: #ceb789;
       line-height: 1.7;
     }
 
-    h1, h2 {
-      font-family: 'Solway', serif;
-      font-weight: 700;
-      margin: 0;
+    h3 {
+
+    font-family: "outfit", 'sans-serif';
+    color:#ecdf9c;
+    font-style: italic;
+
     }
 
     a {
@@ -59,7 +61,6 @@
     }
 
     .section {
-      max-width: 1200px;
       margin: auto;
       padding: 80px 40px;
       display: grid;
@@ -69,10 +70,11 @@
     }
 
     .section img {
-      width: 100%;
+      max-width: 100%;
       border-radius: 10px;
-      border: 4px solid #911d6c;
+      border: 4px solid #c3c98b;
       object-fit: cover;
+      border-style: inset;
     }
 
     .text-content h2 {
@@ -99,11 +101,33 @@
         padding: 60px 20px;
       }
 
+          .hero {
+        padding: 60px 20px 40px;
+      }
+
+      .hero h1 {
+        font-size: clamp(1.6rem, 7vw, 2.5rem);
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .text-content h2 {
+        font-size: 1.5rem;
+      }
+
+      .text-content p {
+        font-size: 1rem;
+      }
+
       .section img {
-        max-width: 80%;
-        margin: 0 auto;
+      max-width: 90%;
+      margin: 0 auto;
       }
     }
+
+    
   </style>
 </head>
 <body>
@@ -120,10 +144,16 @@
     
     <div class="text-content">
       <h2><small>(motion)</small> Graphic design is my passion</h2>
-      <p>From drawing crappy Pokémon cards in grade 7 to designing album covers and UI/UX in games—I’ve always been obsessed with visual storytelling. My background in filmmaking and acting adds a unique flair to my design process. Everything I create is rooted in narrative structure.</p>
-      <p>Outside of design, I’m also the vocalist for <a href="https://taplink.cc/theseance" target="_blank"><span class="highlight">THE SEANCE</span></a>, a synthpop/post-punk band. We’ve been played in clubs and radio stations around the world—and my solo music explores even weirder genres.</p>
-      <p>When I entered the Graphic Design program, I was set on becoming a web designer. Then I discovered Motion Graphics. It combines all my favorite things—<span class="highlight">music scoring, video editing, sound mixing, post-production, and animation</span>. After Effects is both my best friend and worst enemy.</p>
+      <p>From drawing crappy Pokémon cards in grade 7 to designing album covers to UI/UX in games I programmed—Graphic Design has always been a constant in my life. My background in filmmaking and acting adds a unique flair to my design process. Everything I create is rooted in narrative structure.</p>
+      <p>Outside of design, I sing in a post-punk/synthpop band, <a href="https://taplink.cc/theseance" target="_blank"><span class="highlight">THE SEANCE</span></a>. We’ve been played in clubs and radio stations around the world! My lesser known solo music project is more experimental and explores a wide-range of genres.</p>
+      <p>When I entered the Graphic Design program, I was originally set on Web Design. Then I discovered Motion Graphics. It combines all my favorite things—<span class="highlight">music scoring, video editing, sound mixing, post-production, and animation</span>. After Effects is the coolest program—when it's not crashing...</p>
     </div>
+    <div class="about-keywords-list">
+      <h3>CONSCIENTIOUS</h3>
+      <h3>VERSATILE</h3>
+      <h3>STYLISTIC</h3>
+    </div>
+
   </section>
 
   <div id="footer"></div>
