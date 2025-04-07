@@ -38,7 +38,7 @@
       gap: 40px;
       max-width: 1200px;
       margin: auto;
-      padding: 40px;
+      padding: 80px;
       flex-wrap: wrap;
     }
 
@@ -52,7 +52,7 @@
       gap: 20px;
     }
 
-        .contact-links {
+        .contact-page-links {
       display: flex;
       flex-direction: column;
       align-items: flex-start; /* align links by icon */
@@ -61,7 +61,7 @@
       width: 100%;
     }
 
-    .contact-social-link {
+    .contact-page-social-link {
       display: flex;
       align-items: center;
       gap: 10px;
@@ -73,13 +73,13 @@
       
     }
 
-    .contact-social-link:hover {
+    .contact-page-social-link:hover {
       color: #ffffff;
   transform: scale(1.05);
   transition: all 0.2s ease-in-out;
     }
 
-    .contact-social-icon {
+    .contact-page-social-icon {
       width: 30px;
       height: 30px;
       fill: currentColor;
@@ -111,6 +111,14 @@
       padding: 30px 40px;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-container p {
+
+      font-family: 'Segoe UI', sans-serif;
+      font-weight: 700;
+      padding-bottom: 1%;
+
     }
 
     form {
@@ -170,7 +178,7 @@
       }
     }
 
-    .contact-social-link {
+    .contact-page-social-link {
 
       font-size: clamp(1.25rem, 3vw, 2rem);
 
@@ -184,7 +192,6 @@
 
   <header>
     <h1>CONTACT</h1>
-    <p>If you like what you see and want to work together, send me an email!</p>
   </header>
 
   <div class="column-content">
@@ -197,21 +204,21 @@
         </video>
       </div>
   
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/chandler-goudreau/" target="_blank" class="contact-social-link">
-          <svg class="contact-social-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <div class="contact-page-links">
+        <a href="https://www.linkedin.com/in/chandler-goudreau/" target="_blank" class="contact-page-social-link">
+          <svg class="contact-page-social-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 3C3.67157 3 3 3.67157 3 4.5V19.5C3 20.3284 3.67157 21 4.5 21H19.5C20.3284 21 21 20.3284 21 19.5V4.5C21 3.67157 20.3284 3 19.5 3H4.5ZM8.52076 7.00272C8.52639 7.95897 7.81061 8.54819 6.96123 8.54397C6.16107 8.53975 5.46357 7.90272 5.46779 7.00413C5.47201 6.15897 6.13998 5.47975 7.00764 5.49944C7.88795 5.51913 8.52639 6.1646 8.52076 7.00272ZM12.2797 9.76176H9.75971V18.3216H12.4217V16.9819C12.4203 15.9674 12.4194 14.9532 12.4246 13.9397C12.5005 13.2028 13.5271 11.7586 14.4074 11.8979C15.5042 12.8471 15.6605 14.9339 15.6573 17.0292C15.6561 17.769 15.6561 18.1388 15.6561 18.3202H18.328V16.759C18.3264 14.5001 18.3294 13.3702 18.1508 11.8627C17.5771 10.5211 16.0133 9.5691 15.4663 9.5466C13.6817 9.71394 13.0096 10.0641 12.5019 10.6814L12.2797 10.9557V9.76176ZM5.68164 18.3244H8.33242V9.76733H5.68164V18.3244Z" />
           </svg>
           LinkedIn
         </a>
-        <a href="https://vimeo.com/chandlergoudreau/" target="_blank" class="contact-social-link">
-          <svg class="contact-social-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <a href="https://vimeo.com/chandlergoudreau/" target="_blank" class="contact-page-social-link">
+          <svg class="contact-page-social-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M22.23 6.15c-.09 1.93-1.43 4.57-4.03 7.91-2.69 3.53-4.97 5.3-6.83 5.3-1.15 0-2.13-1.06-2.93-3.17-.53-1.94-1.06-3.87-1.6-5.81-.59-2.1-1.22-3.15-1.88-3.15-.15 0-.67.31-1.57.93l-.94-1.2c.99-.88 1.96-1.76 2.93-2.64 1.32-1.14 2.3-1.75 2.93-1.81 1.54-.14 2.49.91 2.86 3.13.39 2.42.66 3.93.82 4.51.46 2.09.96 3.13 1.5 3.13.43 0 1.08-.71 1.96-2.13.87-1.42 1.34-2.5 1.42-3.22.13-1.22-.35-1.83-1.42-1.83-.5 0-1.01.12-1.53.37 1.02-3.34 2.97-4.96 5.84-4.87 2.13.06 3.13 1.44 3.01 4.12z"/>
           </svg>
           Vimeo
         </a>
-        <a href="https://www.instagram.com/chanimotion/" target="_blank" class="contact-social-link">
-          <svg class="contact-social-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <a href="https://www.instagram.com/chanimotion/" target="_blank" class="contact-page-social-link">
+          <svg class="contact-page-social-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8.75 2.25a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 1 .75-.75ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z" />
           </svg>
           Instagram
@@ -221,6 +228,7 @@
   
     <!-- Right Column: Form -->
     <div class="contact-container">
+      <p>Say hi, share your vision, and let’s bring it to life!</p>
       <form action="mailto:chandler.goudreau@gmail.com" method="POST" enctype="text/plain">
         <label for="name">NAME</label>
         <input type="text" id="name" name="name" required>
