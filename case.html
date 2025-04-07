@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css"/><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <title>Chandler Goudreau | Case Study</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: #0c0c0c;
+  color: #f0eada;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.media-split {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  gap: 40px;
+  background: #161616;
+}
+
+.media-split .media,
+.media-split .text {
+  flex: 1 1 500px;
+}
+
+.media video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.feature-item {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #2f2f2f;
+}
+
+.feature-item h3 {
+  color: #d2c57d;
+  margin-bottom: 0.5em;
+}
+
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.button {
+  background: #a01764;
+  color: #f0eada;
+  padding: 14px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #80114f;
+}
+
+
+</style>
+
+<body>
+  <div id="navbar"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>PROJECT NAME</h1>
+      <p class="subtitle">A case study in design, storytelling, and sonic nostalgia.</p>
+    </div>
+  </section>
+
+  <!-- Description Section -->
+  <section class="intro">
+    <div class="container">
+      <p>This project blends analog texture with cinematic scale, capturing a moment of musical warmth and imperfection. Here's a closer look at how it all came together—from concept to execution.</p>
+    </div>
+  </section>
+
+  <!-- Video or Image + Text Split -->
+  <section class="media-split">
+    <div class="media">
+      <video autoplay muted loop playsinline>
+        <source src="your-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="text">
+      <h2>Creative Direction</h2>
+      <p>Inspired by lo-fi cassette recordings and vintage hardware, this visual identity was designed to feel tactile, warm, and emotionally resonant.</p>
+    </div>
+  </section>
+
+  <!-- Feature / Spec Grid -->
+  <section class="features">
+    <div class="container">
+      <h2>Technical Specs</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <h3>Tools Used</h3>
+          <p>After Effects, Blender, Logic Pro, Photoshop</p>
+        </div>
+        <div class="feature-item">
+          <h3>Duration</h3>
+          <p>4 weeks (Concept → Final)</p>
+        </div>
+        <div class="feature-item">
+          <h3>Deliverables</h3>
+          <p>Motion Design, Sound Design, Case Study Web</p>
+        </div>
+        <div class="feature-item">
+          <h3>My Role</h3>
+          <p>Creative Direction, Design, Music Production</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA (Optional) -->
+  <section class="cta">
+    <a href="portfolio.html" class="button">Back to Portfolio</a>
+  </section>
+
+</body>
+<div id="footer"></div>
+</html>
