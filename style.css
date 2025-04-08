@@ -183,6 +183,7 @@
   
   
   .hero-video {
+    filter: brightness(60%);
     position: absolute;
     top: 0;
     left: 0;
@@ -206,8 +207,8 @@
     padding: 40px 20px;
     color: #eee099;
     text-align: center;
+    
   }
-  
 
   .caption-box {
     
@@ -508,6 +509,7 @@
     .hero-video {
       width: 100%;
       height: auto;
+      filter: brightness(100%);
     }
 
 

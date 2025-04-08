@@ -15,7 +15,6 @@
       margin: 0;
       font-family: 'Noto Serif', serif;
       background-image: url("web-assets/splash-bg.jpg");
-      color: #ecdf9c;
       min-height: 100vh;
     }
 
@@ -37,7 +36,7 @@
       align-items: stretch;
       gap: 40px;
       margin: auto;
-      padding: 80px;
+      padding: 40px 40px;
       flex-wrap: wrap;
     }
 
@@ -74,8 +73,8 @@
 
     .contact-page-social-link:hover {
       color: #ffffff;
-  transform: scale(1.05);
-  transition: all 0.2s ease-in-out;
+      transform: scale(1.05);
+      transition: all 0.2s ease-in-out;
     }
 
     .contact-page-social-icon {
@@ -103,16 +102,17 @@
     .contact-container {
       flex: 1;
       min-width: 300px;
-      max-width: 600px;
-      background-color: #7a1347;
+      background-color: rgb(122, 19, 71, 0.3);
+      border: 2px solid #ecdf9c; /* border color */
       padding: 30px 40px;
       border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
     }
 
     .contact-container p {
 
       font-family: 'Segoe UI', sans-serif;
+      font-size: clamp(1.4rem, 2vw, 1.8rem);
       font-weight: 700;
       padding-bottom: 2rem;
 
@@ -124,6 +124,7 @@
     }
 
     label {
+      color: #f7ebb0;
       margin-top: 15px;
       margin-bottom: 5px;
       font-family: 'Outfit', sans-serif;
@@ -136,7 +137,7 @@
       border-radius: 6px;
       font-family: 'Montserrat', sans-serif;
       font-size: 16px;
-      background-color: #c5b087;  /* background color */
+      background-color: #af9f90;  /* background color */
       color: #000000;              /* text color */
     }
 
@@ -160,11 +161,14 @@
       .column-content {
         flex-direction: column;
         padding: 20px;
+        justify-content: center;
+        align-items: center;
       }
 
       .contact-container,
       .video-box {
         max-width: 100%;
+        
       }
 
       /* Wrap video + social in a row for medium screens */
@@ -178,6 +182,7 @@
 
   .video-box {
     flex: 1 1 300px;
+    
   }
 
   .contact-page-links {
@@ -254,7 +259,7 @@
         <label for="message">MESSAGE</label>
         <textarea id="message" name="message" required></textarea>
   
-        <button type="submit" class="custom-button">SEND</button>
+        <button type="submit" class="custom-button">SUBMIT</button>
       </form>
     </div>
   </div>
