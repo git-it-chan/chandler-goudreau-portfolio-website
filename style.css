@@ -345,12 +345,11 @@
   display: inline-block;
   padding: 14px 28px;
   background-color: #911d6c;
-  border: 3px solid #f8e5b0; /* soft border */
   color: #fff;
   font-family: "outfit", 'sans-serif';
   text-decoration: none;
   border-radius: 8px;
-  font-size: 1.125rem; /* 18px */
+  font-size: 1.5rem; /* 18px */
   font-weight: 500;
   
 }
